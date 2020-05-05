@@ -1,5 +1,7 @@
 ## Jboss eap 7 SQL Configuration
 
+The example below is an SQL datasource configuration. The datasource has been enabled, a user has been added, and validation options have been set.
+
 Runtime > Server groups > < select group> > view
 
 **Jvm assignments are made for the profile**
