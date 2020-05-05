@@ -62,7 +62,9 @@ vi /opt/jboss-eap/modules/oracle/jdbc/main/module.xml
 
 
 **Connection URL** =  jdbc:oracle:thin:@10.10.10.30:1521:vtstest
+
 **username** = db user
+
 **password** = password of db user
 
 ![image](https://user-images.githubusercontent.com/3519706/81076778-bea6fa80-8ef4-11ea-9564-80643c53fd7d.png)
