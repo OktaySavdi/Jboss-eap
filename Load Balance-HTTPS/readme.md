@@ -2,7 +2,7 @@
 
 Nginx was used for jboss eap 7 load balance
 
-```json
+```
 upstream unig {
     server 10.10.10.20:8080;
     server 10.10.10.21:8080;
