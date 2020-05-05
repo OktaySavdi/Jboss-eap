@@ -64,7 +64,9 @@ vi /opt/jboss-eap/modules/com/microsoft/sqlserver/main/module.xml
 ![image](https://user-images.githubusercontent.com/3519706/81073538-72f25200-8ef0-11ea-8d1e-e88e1427601f.png)
 
 **Connection URL** =  jdbc:sqlserver://10.10.10.30;DatabaseName=UPY1
+
 **username** = db user
+
 **password** = password of db user
 
 ![image](https://user-images.githubusercontent.com/3519706/81073819-dda38d80-8ef0-11ea-9938-f09b0637b917.png)
