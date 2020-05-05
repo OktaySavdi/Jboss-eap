@@ -1,6 +1,6 @@
 ## Jboss eap 7 Load Balance - Http
 
-Nginx was used for jboss eap 7 loadbalance
+Nginx was used for jboss eap 7 load balance
 
 ```
 upstream unig {
