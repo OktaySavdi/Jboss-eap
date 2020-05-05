@@ -14,9 +14,13 @@ keytool -genseckey -alias vault -storetype jceks -keyalg AES -keysize 128 -store
 /opt/jboss-eap/bin/vault.sh --keystore /opt/jboss-eap/vault/vault.keystore --keystore-password vault22 --alias vault --vault-block upy1 --attribute password --sec-attr MyPassword --enc-dir /opt/jboss-eap/vault/ --iteration 120 --salt 1234abcd
 ```
 **salt**               -> It is a random eight-character string used with the number of iterations to encrypt the contents of the keystore.
+
 **Vault Block**  -> The name to be given to this block in the password vault.
-**Attribute**     -> Name to be stored attribute
+
+**Attribute**     -> Name to be stored attribute.
+
 **SEC-ATTR**  -> Password stored in the password vault.
+
 **iteration**   -> Number of operations of the encryption algorithm.
 
 After running, the following screens will come
