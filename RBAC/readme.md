@@ -1,5 +1,6 @@
 ## Jboss eap 7 RBAC
 
+![image](https://user-images.githubusercontent.com/3519706/81079915-d97b6e00-8ef8-11ea-9a83-f6045fa53719.png)
 
 **New users are created**
 ```
