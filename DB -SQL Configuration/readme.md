@@ -71,6 +71,6 @@ vi /opt/jboss-eap/modules/com/microsoft/sqlserver/main/module.xml
 
 **password** = password of db user
 
-![image](https://user-images.githubusercontent.com/3519706/81073819-dda38d80-8ef0-11ea-9938-f09b0637b917.png)
+![image](https://user-images.githubusercontent.com/3519706/81173454-c031fa80-8fa8-11ea-9244-5a8ed91dad62.png)
 
 ![image](https://user-images.githubusercontent.com/3519706/81074102-37a45300-8ef1-11ea-902d-76eb187c29ae.png)
