@@ -16,7 +16,7 @@ In `domain.xml`
 </server-groups>
 ```
 
-For JBoss EAP 4/5:
+**For JBoss EAP 4/5:**
 
 Set the following flags as desired in the `JAVA_OPTS` of `run.conf` in Linux/UNIX (or `run.conf.bat` if on Windows):
 ```
