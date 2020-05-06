@@ -4,6 +4,8 @@
 **Create Vault Keystore**
 ```
 mkdir /opt/jboss-eap/vault
+```
+```
 chown -R jboss-eap:jboss-eap /opt/jboss-eap/vault/
 ```
 ```
