@@ -5,7 +5,9 @@ Console > Configuration > profiles > full > Logging > Configuration > view > han
 
 ![image](https://user-images.githubusercontent.com/3519706/81142312-03c04080-8f78-11ea-85c7-b1c65c879cf7.png)
 
-**File / Path**                    ->  server.log
+**Name**                        ->  size-handler
+
+**File / Path**                 ->  server.log
 
 **File / relative To**          -> jboss.server.log.dir
 
