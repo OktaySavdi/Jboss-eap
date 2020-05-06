@@ -24,9 +24,9 @@ Console > Configuration > profiles > full > Logging > Configuration > view > han
 ![image](https://user-images.githubusercontent.com/3519706/81142417-500b8080-8f78-11ea-8b7e-a1dfeec292e3.png)
 
 Method 2
-
+```
 vi /opt/jboss-eap/domain/configuration/domain.xml
-
+```
 Added under the selected profile
 ```xml
 <size-rotating-file-handler name="size-file">
