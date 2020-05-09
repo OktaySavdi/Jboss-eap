@@ -18,7 +18,7 @@ docker build . -t jboss
 ```
 container is created
 ```ruby
-docker run -d  -p 8080:8080 -p 9990:9990 -it jboss -b 0.0.0.0 -bmanagement 0.0.0.0
+docker run -d  -p 8080:8080 -p 9990:9990 -it quay.io/oktaysavdi/jboss -b 0.0.0.0 -bmanagement 0.0.0.0
 ```
 Application is controlled via console
 ```ruby
