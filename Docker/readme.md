@@ -28,5 +28,7 @@ http://[ServerIP]:9990/console/index.html
 ![image](https://user-images.githubusercontent.com/3519706/81474024-89a7ea00-920b-11ea-8a91-0880e522c8f0.png)
 
 Application is called
-
+```ruby
+http://[ServerIP]:8080/webapp/
+```
 ![image](https://user-images.githubusercontent.com/3519706/81474092-e4d9dc80-920b-11ea-9713-1b9bde8f71f4.png)
