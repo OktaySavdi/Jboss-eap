@@ -25,7 +25,7 @@ vi /opt/jboss-eap/modules/com/microsoft/sqlserver/main/module.xml
 vi /opt/jboss-eap/domain/configuration/domain.xml (on master)
 ```xml
 <datasource jndi-name="java:/UPY1" pool-name="UPY1" statistics-enabled="true">
-                        <connection-url>jdbc:sqlserver://10.10.10.30;DatabaseName=UPY1</connection-url>
+                        <connection-url>jdbc:sqlserver://10.10.10.30:1433;DatabaseName=UPY1</connection-url>
                         <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
                         <driver>sqlserver</driver>
                         <pool>
