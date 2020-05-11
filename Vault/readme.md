@@ -15,7 +15,7 @@ keytool -genseckey -alias vault -storetype jceks -keyalg AES -keysize 128 -store
 ```ruby
 /opt/jboss-eap/bin/vault.sh --keystore /opt/jboss-eap/vault/vault.keystore --keystore-password vault22 --alias vault --vault-block upy1 --attribute password --sec-attr MyPassword --enc-dir /opt/jboss-eap/vault/ --iteration 120 --salt 1234abcd
 ```
-**salt**               -> It is a random eight-character string used with the number of iterations to encrypt the contents of the keystore.
+**Salt**               -> It is a random eight-character string used with the number of iterations to encrypt the contents of the keystore.
 
 **Vault Block**  -> The name to be given to this block in the password vault.
 
@@ -23,7 +23,7 @@ keytool -genseckey -alias vault -storetype jceks -keyalg AES -keysize 128 -store
 
 **SEC-ATTR**  -> Password stored in the password vault.
 
-**iteration**   -> Number of operations of the encryption algorithm.
+**Iteration**   -> Number of operations of the encryption algorithm.
 
 After running, the following screens will come
 ```ruby
@@ -61,7 +61,7 @@ chown -R jboss-eap:jboss-eap /opt/jboss-eap/vault/
 </vault>
 ```
 **Then, the password information generated is changed through the configuration.**
-```
+```ruby
 vi /opt/jboss-eap/domain/configuration/domain.xml
 ```
 previous
