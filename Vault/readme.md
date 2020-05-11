@@ -2,17 +2,17 @@
 
 
 **Create Vault Keystore**
-```
+```ruby
 mkdir /opt/jboss-eap/vault
 ```
-```
+```ruby
 chown -R jboss-eap:jboss-eap /opt/jboss-eap/vault/
 ```
-```
+```ruby
 keytool -genseckey -alias vault -storetype jceks -keyalg AES -keysize 128 -storepass vault22 -keypass vault22 -validity 730 -keystore /opt/jboss-eap/vault/vault.keystore
 ```
 **Set encrypt db password**
-```
+```ruby
 /opt/jboss-eap/bin/vault.sh --keystore /opt/jboss-eap/vault/vault.keystore --keystore-password vault22 --alias vault --vault-block upy1 --attribute password --sec-attr MyPassword --enc-dir /opt/jboss-eap/vault/ --iteration 120 --salt 1234abcd
 ```
 **salt**               -> It is a random eight-character string used with the number of iterations to encrypt the contents of the keystore.
@@ -26,7 +26,7 @@ keytool -genseckey -alias vault -storetype jceks -keyalg AES -keysize 128 -store
 **iteration**   -> Number of operations of the encryption algorithm.
 
 After running, the following screens will come
-```
+```ruby
 ********************************************
 Vault Block:vb
 Attribute Name:password
@@ -41,8 +41,10 @@ For domain mode:
 "120"),("ENC_FILE_DIR" => "/opt/jboss-eap/vault/")])
 ```
 **Copy vault folder all server**
-```
+```ruby
 scp -r /opt/jboss-eap/vault root@10.10.10.21:/opt/jboss-eap/
+```
+```ruby
 chown -R jboss-eap:jboss-eap /opt/jboss-eap/vault/
 ```
 
@@ -75,4 +77,8 @@ modified version
     <user-name>sa</user-name>
     <password>${VAULT::vb::password::1}</password>
 </security>
+```
+Remove a sensitive string from the password vault
+```ruby
+/opt/jboss-eap/bin/vault.sh --keystore /opt/jboss-eap/vault/vault.keystore --keystore-password changeit --alias vault --remove-sec-attr --vault-block cert --attribute password --enc-dir /opt/jboss-eap/vault/ --iteration 120 --salt 1234abcd
 ```
