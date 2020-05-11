@@ -42,7 +42,7 @@ For domain mode:
 ```
 **Copy vault folder all server**
 ```
-scp -r /opt/jboss-eap/vault root@10.10.10.21:/opt/jboss-eap/vault
+scp -r /opt/jboss-eap/vault root@10.10.10.21:/opt/jboss-eap/
 chown -R jboss-eap:jboss-eap /opt/jboss-eap/vault/
 ```
 
