@@ -45,7 +45,7 @@ Username : operator
 /core-service=management/access=authorization/role-mapping=Monitor/include=user-dev:add(name=dev,type=USER)
 /core-service=management/access=authorization/role-mapping=Deployer/include=user-mon:add(name=mon,type=USER)
 /core-service=management/access=authorization/role-mapping=Administrator/include=user-admin:add(name=admin,type=USER)
-/core-service=management/access=authorization/role-mapping=SuperUser/include=user-super:add(name=super,type=USER)
+/core-service=management/access=authorization/role-mapping=SuperUser/include=user-admin:add(name=admin,type=USER)
 /core-service=management/access=authorization/role-mapping=Operator/include=user-operator:add(name=operator,type=USER)
 ```
 **To add the role to the created group**
