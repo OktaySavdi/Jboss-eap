@@ -42,8 +42,8 @@ Username : operator
 
 **The user created is authorized**
 ```
-/core-service=management/access=authorization/role-mapping=Monitor/include=user-dev:add(name=dev,type=USER)
-/core-service=management/access=authorization/role-mapping=Deployer/include=user-mon:add(name=mon,type=USER)
+/core-service=management/access=authorization/role-mapping=Monitor/include=user-mon:add(name=mon,type=USER)
+/core-service=management/access=authorization/role-mapping=Deployer/include=user-dev:add(name=dev,type=USER)
 /core-service=management/access=authorization/role-mapping=Administrator/include=user-admin:add(name=admin,type=USER)
 /core-service=management/access=authorization/role-mapping=SuperUser/include=user-admin:add(name=admin,type=USER)
 /core-service=management/access=authorization/role-mapping=Operator/include=user-operator:add(name=operator,type=USER)
