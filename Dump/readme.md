@@ -1,10 +1,13 @@
 ## Jboss eap 7 Dump
 
-
-Jboss eap 7 Heap Dump
 ```ruby
 /opt/jboss/jdk/bin/jmap -dump:format=b,file=/vhosting/dumpdir/53486.hprof 53486
 ```
+```ruby
+/usr/jboss/jdk1.8.0_202/bin/jstack -l 53486 > high-cpu-tdump.out
+```
+Jboss eap 7 Heap Dump
+
 ![image](https://user-images.githubusercontent.com/3519706/81080281-3b3bd800-8ef9-11ea-83b5-b41d63a6b630.png)
 
 Jboss eap 7 Thread Dump
