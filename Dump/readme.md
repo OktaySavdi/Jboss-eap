@@ -4,7 +4,7 @@
 /opt/jboss/jdk/bin/jmap -dump:format=b,file=/vhosting/dumpdir/53486.hprof 53486
 ```
 ```ruby
-/usr/jboss/jdk1.8.0_202/bin/jstack -l 53486 > high-cpu-tdump.out
+/opt/jboss/jdk/bin/jstack -l 53486 > high-cpu-tdump.out
 ```
 Jboss eap 7 Heap Dump
 
